@@ -1,4 +1,6 @@
-# MyApp.py
+# workout_timer.py
+#Timer with 5 counting modes
+
 import time
 
 mode_choice=int(input("Please Enter a Mode (1=Timer, 2=Stopwatch, 3=EMOM, 4=TABATA, or 5=Custom Interval)"))
