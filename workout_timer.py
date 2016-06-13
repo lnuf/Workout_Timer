@@ -45,18 +45,21 @@ def every_minute():
 def tabata():
     rounds=int(input("Enter Number of Rounds"))
     while rounds>0:
-        for i in range(41):
-            x=1
+        x=0
+        for i in range(x,31):
             time.sleep(1)
 
-            if x==30:
+            #print(i)
+            if i==30:
                 print "REST"
-            elif x==41:
+
+            elif x==0:
                 print "GO"
             else:
                 print(formatTime(x))
             x+=1
         rounds-=1
+
 
 
 #Call Mode function
