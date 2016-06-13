@@ -46,13 +46,16 @@ def tabata():
     rounds=int(input("Enter Number of Rounds"))
     while rounds>0:
         x=0
-        for i in range(x,31):
+        work=31#seconds
+        for i in range(x,work):
             time.sleep(1)
-
-            #print(i)
             if i==30:
                 print "REST"
-
+                rest = 10#seconds
+                for i in range(rest + 1):
+                    time.sleep(1)
+                    print(formatTime(rest))
+                    rest -= 1
             elif x==0:
                 print "GO"
             else:
